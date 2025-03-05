@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Officail page of Driving by the Rules: A Benchmark for Integrating Traffic Sign Regulations into Vectorized HD Map">
+  <meta name="keywords" content="Driving rules, Dataset and Benchmark">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .scroll-container {
+            display: flex;              /* 启用 Flexbox 布局 */
+            overflow-x: auto;          /* 使容器可以横向滚动 */
+            white-space: nowrap;       /* 防止内容换行 */
+            width: 100%;               /* 设置容器宽度 */
+            border: 1px solid #ccc;    /* 添加边框以便观察 */
+        }
+        .scroll-container img {
+            max-width: 100%;     /* 确保图像自适应 */
+            height: auto;        /* 保持图像比例 */
+            margin: 10px;        /* 添加间距 */
+        }
+  </style>
+  <title>Driving by the Rules: A Benchmark for Integrating Traffic Sign Regulations into Vectorized HD Map</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+  
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Driving by the Rules: A Benchmark for Integrating Traffic Sign Regulations into Vectorized HD Map</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Xinyuan Chang<sup>1*</sup>,</span>
+            <span class="author-block">
+              Maixuan Xue<sup>1,2*</sup>,</span>
+            <span class="author-block">
+              Xinran Liu<sup>1†</sup>,
+            </span>
+            <span class="author-block">
+             Zheng Pan<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=KNyC5EUAAAAJ&hl=zh-CN&oi=ao/">Xing Wei</a><sup>2‡</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Amap, Alibaba Group,</span>
+            <span class="author-block"><sup>2</sup>Xi'an Jiaotong University</span>            
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal Contribution,</span>
+            <span class="author-block"><sup>†</sup>Project Leader,</span>
+            <span class="author-block"><sup>‡</sup>Corresponding Author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2410.23780v2"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2410.23780"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <img src="./static/images/overview_new.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+    </div>
+    <!-- 将文字内容也放在 container is-max-desktop 中 -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              <i>For safe autonomous driving, accurate interpretation of lanes and traffic signs is crucial, ensuring vehicles maintain proper positioning and follow driving rules. This figure illustrates an intersection scene where extracted traffic sign rules are integrated into the corresponding lanes on the HD map.</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Ensuring adherence to traffic sign regulations is essential for both human and autonomous vehicle navigation. While current online mapping solutions often prioritize the construction of the geometric and connectivity layers of HD maps, overlooking the construction of the traffic regulation layer within HD maps. Addressing this gap, we introduce <strong>MapDR</strong>, a novel dataset designed for the extraction of <b>D</b>riving <b>R</b>ules from traffic signs and their association with vectorized, locally perceived HD <b>Maps</b>. 
+            MapDR features over <b>10,000</b> annotated video clips that capture the intricate correlation between traffic sign regulations and lanes.
+          </p>
+          <p>
+            Built upon this benchmark and the newly defined task of integrating traffic regulations into online HD maps, we provide modular and end-to-end solutions: <strong>VLE-MEE</strong> and <strong>RuleVLM</strong>, offering a strong baseline for advancing autonomous driving technology. 
+            It fills a critical gap in the integration of traffic sign rules, contributing to the development of reliable autonomous driving systems.
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>  
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video Visualization of MapDR</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2AK-y58dOKs?si=0XQ7vYIeYSfZSHPw?rel=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+    <!-- Task & Benchmark. -->
+    <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title">Task Definition</h2>
+              <div class="hero-body">
+                  <div class="columns is-centered">
+                       <img src="./static/images/task_definition.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                  </div>
+                  <p>
+                      <i>Step1 ~ Step4 shows a case of driving by the rules.  Step2 and Step3 demonstrates the specific role of two sub-tasks, respectively.</i>          
+                  </p>
+              </div>
+    </div>
+    <div class="container is-max-desktop">  
+      <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p>
+                The ability to discern rules from traffic signs and to associate them with specific lanes is pivotal for autonomous navigation. 
+                As depicted in Figure above, traffic signs are primary indicators of lane-level rules. Our proposed task involves two core sub-tasks: 
+                1) Extracting lane-level rules from traffic signs, and 2) Establishing correspondence between these rules and centerlines. 
+                Generally, vehicles follow the center of lanes. Therefore, we use centerlines to represent lanes. 
+                This approach mirrors human drivers' instinct to observe traffic signs and then relate the indicated rules to the lanes they govern.          
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section> 
+    <!--/ Task & Benchmark. -->
+
+    <!-- Dataset. -->
+    <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title">Dataset: MapDR</h2>
+              <div class="hero-body">
+                  <div class="columns is-centered">
+                       <img src="./static/images/dataset_demo.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                  </div>
+                  <p>
+                      <i>Multiple lane-level rules of a single traffic sign are annotated in {key:value} format. Directed lines indicate the correspondence between rules and particular centerlines.</i>          
+                  </p>
+              </div>
+              <div class="hero-body">
+                  <div class="columns is-centered">
+                       <img src="./static/images/distribution.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                  </div>
+                  <p>
+                      <i>The majority of the data originates from Beijing and Shanghai, with additional scenes from Guangzhou. Figure above illustrates the geographic spread and variety of traffic signs.</i>
+                  </p>
+              </div>
+    </div>
+    <div class="container is-max-desktop">  
+      <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p>
+              We introduce the MapDR dataset, meticulously annotated with traffic sign regulations and their correspondences to lanes, as shown in Figure above. 
+              The dataset encompasses a diverse range of scenarios, weather conditions, and traffic situations, with over 10,000 traffic scene segments, 18,000 driving rules, and 400,000 images.
+              Traffic signs typically have varying textual descriptions, text layouts, and positions on the road, which add complexity to the task.
+              
+              </p>
+              <p>
+              The dataset reflects a natural long-tail distribution, with a prevalence of bus and direction lanes and a scarcity of tidalflow lanes.
+              We primarily focus on traffic signs that indicate lane-level rules, collected from cities with the most complex and diverse traffic scenarios in China, ensuring realistic and representative data.
+              All images have undergone privacy and safety processing to obscure license plates and faces. 
+              More comprehensive statistic of dataset and case demonstrations can be found in out paper.
+              </p>
+            </div>
+          </div>
+        </div>
+      <div class="hero-body">
+          <div class="scroll-container">
+            <img src="./static/images/traffic_sign_vis.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+            <img src="./static/images/case1.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+            <img src="./static/images/case2.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+          </div>
+          <p>
+            <i>MapDR includes various types and layouts of traffic signs, which contain various driving rules. This presents challenges and necessity for accurately interpreting these traffic signs and associating them with the corresponding lanes.</i>
+          </p>
+      </div>
+    </div>
+    </section> 
+    <!--/ Dataset. -->
+
+
+    <!-- Modular Approach -->
+    <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title">Modular Approach</h2>
+              <div class="hero-body">
+                  <div class="scroll-container">
+                    <img src="./static/images/architecture.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                    <img src="./static/images/mee_new.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                  </div>
+                  <p>
+                    <i>Entire approach can be divided into two main parts:  Rule Extraction from Traffic Sign (top) and Rule-Lane Correspondence Reasoning (bottom). Rule Extraction model consists of two sequential stages with the same structure VLE but unshared parameters, and the training procedure is independent.</i>
+                  </p>
+                  <p>
+                    <i>Vectors can be represented as sequences of points, similar to words in sentences. Inspired by this, we designed MEE akin to BERT.</i>      
+                  </p>
+              </div>
+    </div>
+    </section> 
+    <!--/ Modular Approach -->
+
+  
+    <!-- End-to-End Approach -->
+    <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title">End-to-End Approach</h2>
+              <div class="hero-body">
+                  <div class="columns is-centered">
+                    <img src="./static/images/qwendr.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                  </div>
+                  <p>
+                    <i>Qwen-VL(TextPrompt) encodes centerline coordinates inthe PV image as text, inputs them into QwenLM; Qwen-VL(VisualPrompt) visualizes the centerline and its index inthe PV image and inputs it as Visual Prompt into QwenLM,while RuleVLM uses MEE with the cross-attention layerremoved to encode vectorized centerline results and aligns itwith LLM through an adapter. </i>   
+                  </p>
+              </div>
+    </div>
+    </section> 
+    <!--/ End-to-End Approach -->
+  
+  
+    <!-- Experiment -->
+    <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title">Experiment</h2>
+              <div class="hero-body">
+                  <div class="columns is-centered">
+                    <img src="./static/images/result_new.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                  </div>
+                  <p>
+                    <i>The heuristic method and the Qwen-VL(TextPrompt) method serve as the baselines for the modularand end-to-end approach, respectively. "−" denotes end-to-end approach is not suitable to independent evaluations of C.R. because theseapproaches do not utilize ground truth of rules for correspondence reasoning independently.</i>   
+                  </p>
+              </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!--/ Experiment -->
+  
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{chang2025drivingrulesbenchmarkintegrating,
+      title={Driving by the Rules: A Benchmark for Integrating Traffic Sign Regulations into Vectorized HD Map}, 
+      author={Xinyuan Chang and Maixuan Xue and Xinran Liu and Zheng Pan and Xing Wei},
+      year={2025},
+      eprint={2410.23780},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.23780}
+}</code></pre>
+  </div>
+</section>
+  
+<section class="section" id="Contact">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Access Dataset & Evaluation Code</h2>
+      <p>
+       The full dataset and evaluation code are comming soon.
+      </p>
+      <p>
+       Now please contact <a href="mailto:changxinyuan.cxy@alibaba-inc.com">changxinyuan.cxy@alibaba-inc.com</a> for a dataset demo.
+      </p>
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Thanks for <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
