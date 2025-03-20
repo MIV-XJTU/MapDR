@@ -10,7 +10,7 @@ ArXiv: [Driving by the Rules: A Benchmark for Integrating Traffic Sign Regulatio
 
 Demo dataset : [[ModelScope] MapDR-mini](https://modelscope.cn/datasets/MIV-XJTU/MapDR-mini)
 
-Full datasest : [[ModelScope] MapDR_v1220](https://modelscope.cn/datasets/MIV-XJTU/MapDR/)
+Full datasest : [[ModelScope] MapDR](https://modelscope.cn/datasets/MIV-XJTU/MapDR/)
 
 **Note: All dataset slices contained in ModelScope need to be downloaded in full to synthesize the full dataset.**
 
