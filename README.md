@@ -21,9 +21,9 @@ Full datasest : [[ModelScope] MapDR_v1220](https://modelscope.cn/datasets/MIV-XJ
 GitHub: [MapDR](https://github.com/MIV-XJTU/MapDR)
 
 
-## Template from Nerfies
+## Homepage Template from Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This homepage contains source code for the [Nerfies website](https://nerfies.github.io).
 
 
 ## Website License
