@@ -1,4 +1,4 @@
-# 【CVPR 2025】Driving by the Rules: A Benchmark for Integrating Traffic Sign Regulations into Vectorized HD Map
+# 【CVPR 2025 Highlight】Driving by the Rules: A Benchmark for Integrating Traffic Sign Regulations into Vectorized HD Map
 
 This is the official homepage of "Driving by the Rules: A Benchmark for Integrating Traffic Sign Regulations into Vectorized HD Map"
 
